@@ -1,0 +1,37 @@
+<!--components/tesla-swiper/index.wxml-->
+<view class="swiper">
+    <swiper bindchange="onChange">
+      <swiper-item wx:for="{{ data }}" wx:key="index">
+        <view class="swiper-item">
+          <image src="{{ item.cover }}" mode="aspectFill"></image>
+        </view>
+      </swiper-item>
+    </swiper>
+
+    <view class="swiper-content" wx:for="{{ data }}" wx:key="index" wx:if="{{ current === index }}">
+      <view class="title">
+        {{ item.title }}
+      </view>
+      <view class="meta">
+        <view class="items" wx:for="{{ item.specs }}" wx:key="index">
+          <view class="item-title">{{ item.title }}</view>
+          <view class="item-subtitle">{{ item.subtitle }}</view>
+        </view>
+      </view>
+
+      <view class="action">
+        <view class="book-btn">
+          <button bindtap="onBookBtnClick">预约试驾</button>
+          <view class="book-btn-back"></view>
+        </view>
+        <view class="view-configuration" bindtap="viewConfiguration" wx:if="{{ item.productId }}">
+          查看配置
+        </view>
+      </view>
+
+      <view class="swiper-dots">
+        <view class="dot {{ current === index ? 'active' : ''}}" wx:for="{{ data }}" wx:key="index">
+        </view>
+      </view>
+    </view>
+  </view>

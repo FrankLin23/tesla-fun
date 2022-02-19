@@ -1,0 +1,73 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <tesla-swiper wx:if="{{ list.length }}" style="width: 100%;" bind:on-book-btn-click="onSwiperBookBtnClick" data="{{ list }}" />
+  <view class="magazine">
+    <view class="title">
+      T-Zone
+    </view>
+    <image src="../../images/magazine.jpg" class="cover"></image>
+    <view class="name">2021年10月号</view>
+  </view>
+
+  <view class="icon-banner">
+    <image src="https://china-community-app.tesla.cn/wechatmini/credit_card.png" class="banner-bg credit-card"></image>
+    <view class="content">
+      <view class="title">
+        贷款计算器
+      </view>
+      <view class="subtitle">
+        定制我的金融方案
+      </view>
+    </view>
+  </view>
+
+  <view class="icon-banner">
+    <image src="https://china-community-app.tesla.cn/wechatmini/card_bg.png" class="banner-bg"></image>
+    <view class="content">
+      <view class="title">
+        新手视频
+      </view>
+      <view class="subtitle">
+        观看视频
+      </view>
+    </view>
+  </view>
+
+  <view class="icon-box-area">
+    <view class="icon-box">
+      <image src="../../images/ic_clean_engry_policy.svg" class="icon car" mode="widthFix"></image>
+      <view class="title">新能源政策</view>
+    </view>
+    <view class="icon-box">
+      <image src="../../images/ic_traidin.svg" class="icon circle" mode="widthFix"></image>
+      <view class="title">车辆置换</view>
+    </view>
+  </view>
+
+  <page-container show="{{ selectModelShow }}" round="{{ true }}" overlay="{{ true }}" position="{{ 'bottom' }}" close-on-slideDown="{{ false }}" custom-style="{{ 'z-index: 9999;' }}" overlay-style="{{ 'z-index: 9999;' }}">
+    <view class="popup-menu">
+      <view class="head">
+        <view class="title">选择车型</view>
+        <image src="../../images/ic_close_dark.svg" class="close-icon"></image>
+      </view>
+      <view class="content">
+        <view class="item-box">
+          <view class="title">Model 3</view>
+          <image src="../../images/lunbo.jpg"></image>
+        </view>
+        <view class="item-box">
+          <view class="title">Model 3</view>
+          <image src="../../images/lunbo.jpg"></image>
+        </view>
+        <view class="item-box">
+          <view class="title">Model 3</view>
+          <image src="../../images/lunbo.jpg"></image>
+        </view>
+        <view class="item-box">
+          <view class="title">Model 3</view>
+          <image src="../../images/lunbo.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </page-container>
+</view>

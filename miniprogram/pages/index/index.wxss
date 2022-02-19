@@ -1,0 +1,162 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.magazine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.magazine .title {
+  margin-top: 124rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 50rpx;
+}
+
+.magazine .cover {
+  width: 440rpx;
+  height: 558rpx;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  margin-bottom: 28rpx;
+}
+
+.magazine .name {
+  font-size: 20rpx;
+  margin-bottom: 126rpx;
+}
+
+.icon-banner {
+  width: 656rpx;
+  height: 280rpx;
+  position: relative;
+  background-color: #f4f4f6;
+  border-radius: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+
+
+.icon-banner .banner-bg{
+  width: 656rpx;
+  height: 280rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-banner .credit-card {
+  width: 244rpx;
+  height: 244rpx;
+  overflow: hidden;
+  right: 48rpx;
+}
+
+.icon-banner .content {
+  position: absolute;
+  top: 70rpx;
+  left: 50rpx;
+  z-index: 2;
+}
+
+.icon-banner .content .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 28rpx;
+}
+
+.icon-banner .content .subtitle {
+  font-size: 20rpx;
+}
+
+.icon-box-area {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon-box-area .icon-box {
+  width: 160rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-box .icon {
+  width: 98rpx;
+}
+
+.icon-box .circle {
+  margin-top: 10rpx;
+  width: 78rpx;
+  margin-bottom: 10rpx;
+}
+
+.icon-box .title {
+  
+  font-size: 30rpx;
+  
+}
+
+.popup-menu {
+  width: 100%;
+  padding: 50rpx;
+  box-sizing: border-box;
+}
+
+.popup-menu .head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45rpx;
+}
+
+.popup-menu .head .title {
+  font-size: 27rpx;
+  font-weight: bold;
+
+}
+
+.popup-menu .head .close-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.popup-menu .content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-menu .content .item-box {
+  width: 100%;
+  border: 1rpx solid #d1d1d1 ;
+  border-radius: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24rpx 42rpx;
+  margin-bottom: 40rpx;
+  box-sizing: border-box;
+}
+
+.popup-menu .content .icon-box:focus {
+  border-color: blue;
+}
+
+.popup-menu .content .icon-box .title {
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.popup-menu .content image {
+  width: 293rpx;
+  height: 191rpx;
+}
